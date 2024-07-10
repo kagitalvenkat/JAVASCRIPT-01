@@ -101,3 +101,31 @@ iArr.forEach((e,i)=>{
 let indxArr =iArr.filter((ele,indx)=>{
     return iArr.indexOf(ele) == indx
 }); console.log(indxArr);
+
+//sort  - sort the elements either asc or dec order
+
+let sArr=[2,1,5,6,3,4];
+console.log(sArr+"  :sArr");
+let asc=sArr.sort((e1,e2)=> e1-e2);console.log(asc);
+let dsc=sArr.sort((e1,e2)=> e2-e1);console.log(dsc);
+
+//2nd Max Ele
+console.log([2,1,5,6,3,4].sort((e1,e2)=>e2-e1)[1]);
+
+
+//for ...in loop  - used to iterate json objs
+let obj ={"pid":1001, "pname": "hp","pprice":89000.75};
+
+for(let key in obj) {
+    console.log(key,typeof key,obj[key]);
+   // log
+}
+
+
+//some  - atleast one ele satisfies the condition it returns true
+
+console.log([1,2,3,4,5].some(e => e>=5)); //true
+console.log([1,2,3,4,5].some(e => e ==6)); //false
+
+//every - all ele statisfies the condition it returs ture otherwise false
+console.log([1,2,3,4,5].some(e => e>5)); //false
