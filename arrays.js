@@ -1,15 +1,15 @@
 let arr = [10,20,30,40,50,60,70,80,90,100];
 
-// //access array elements by using indexes
-// console.log(arr[1]);    //op: 20
-// console.log(arr[-1]); //op :: undefined
+//access array elements by using indexes
+console.log(arr[1]);    //op: 20
+console.log(arr[-1]); //op :: undefined
 
-// //length
-// console.log(arr.length); //op:7
+//length
+console.log(arr.length); //op:7
 
-// delete arr[2];  
-// console.log(arr);        //[ 10, 20, <1 empty item>, 40, 50, 60, 70 ]
-// console.log(arr.length); //7
+delete arr[2];  
+console.log(arr);        //[ 10, 20, <1 empty item>, 40, 50, 60, 70 ]
+console.log(arr.length); //7
 
 //map function
 
