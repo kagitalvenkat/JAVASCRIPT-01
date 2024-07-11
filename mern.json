@@ -1,0 +1,7 @@
+{
+    "products":[
+        {"id":1001,"name":"Apple","price":79000.99},
+        {"id":1002,"name":"Samsung","price":17520.20},
+        {"id":1003,"name":"Oneplus","price":45000.00}
+    ]
+}
