@@ -129,3 +129,27 @@ console.log([1,2,3,4,5].some(e => e ==6)); //false
 
 //every - all ele statisfies the condition it returs ture otherwise false
 console.log([1,2,3,4,5].some(e => e>5)); //false
+
+
+//flat - create the single dimensional array
+console.log([1,[2],[3,4,5],6].flat(1));  //[ 1, 2, 3, 4, 5, 6 ]
+
+
+
+//flatMap 
+
+//[ [ 1, 'One' ], [ 2, 'Two' ], [ 3, 'Three' ] ]
+let a1 = [1,2,3];
+let a2 = ["One","Two","Three"];
+let a3 = a1.flatMap((e,i) => {
+    return [e, a2[i]];
+});
+console.log(a3); [ 1, 'One', 2, 'Two', 3, 'Three' ]
+//console.log(a3.flat(Infinity)); [ 1, 'One', 2, 'Two', 3, 'Three' ]
+
+
+console.log([1,2,3,4].reverse()) ;   //[ 4, 3, 2, 1 ]
+
+
+//HELLO   -  OLLEH
+console.log(Array.from("HELLO").reverse().join().replace(/,/g,""));
